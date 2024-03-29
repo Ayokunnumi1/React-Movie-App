@@ -29,6 +29,7 @@ function App() {
 }
 
   useEffect(() => { searchMovies('Batman') }, []);
+  // useEffect(() => { console.log('happy') }, [movies]);
   return (
     <div className="App">
       <h1>MovieLand</h1>
@@ -42,6 +43,7 @@ function App() {
         <img src={searchIcon}
           alt="search" onClick={() => {
             searchMovies(searchTerm);
+            console.log(searchTerm)
           }}>
           </img>
       </div>
